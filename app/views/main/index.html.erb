@@ -1,0 +1,14 @@
+<div ng-controller="Ctrl" ng-init="loadImages()">
+  <span ng-hide="current_index==0" class="animate-if">
+    <button ng-click="current_index = current_index - 1">Previous</button>
+  </span>
+
+  <div ng-repeat="image in images">
+    <div ng-hide="current_index != $index">
+      <img ng-src="{{images[$index]}}">
+    </div>
+  </div>
+
+  <button ng-click="current_index = current_index + 1">Next</button>
+</div>
+
