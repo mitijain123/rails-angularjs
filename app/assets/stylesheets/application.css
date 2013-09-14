@@ -11,21 +11,3 @@
  *= require_self
  */
 
-.leftpoint {
-    left: 0;
-}
-
-.pointly {
-    width: 20%;
-    display: block;
-    position: absolute;
-    height: 80%;
-    top: 0;
-    background: black;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.rightpoint {
-    right: 0;
-}
