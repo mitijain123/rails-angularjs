@@ -1,9 +1,9 @@
 class SlidesController < ApplicationController
   def show
-    @first_image = '/assets/AlphaBlip2.png'
+    @first_image = '/assets/Ash.jpg'
     @no_of_slides = 3
     respond_to do |format|
-      format.json { render :json => {:data => ['/assets/AlphaBlip2.png', '/assets/AlphBlip.png', '/assets/Atlanta1.jpg']} }
+      format.json { render :json => {:data => ['/assets/Ash.jpg', '/assets/download.jpg', '/assets/images.jpg']} }
       format.html {}
     end
   end
