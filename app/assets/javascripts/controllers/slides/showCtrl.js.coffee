@@ -13,10 +13,8 @@
     $.ajax(
       type: "GET"
       dataType: "json"
-      url: "/main/index"
+      url: "/slides/show"
       data:
         id: slide_id
     ).done (result) ->
       $scope.images = result.data
-
-

@@ -1,9 +1,9 @@
-<div ng-controller="Ctrl">
+<div ng-controller="Ctrl" ng-init="images">
   <div class="span12">
     <div ng-show="current_index == 0">
-      <img ng-src="<%= '/assets/AlphaBlip2.png' %>">
+      <img ng-src="<%= @first_image %>">
     </div>
-    <div ng-repeat="image in loadImages()" ng-model="images">
+    <div ng-repeat="image in loadImages(1)" ng-model="images">
       <div ng-hide="current_index != $index+1">
         <img ng-src="{{images[$index+1]}}">
       </div>
@@ -21,9 +21,8 @@
   </span>
     </div>
     <div class="span2">
-      <p>No of Slides {{current_index+1}}/{{images.length}}</p>
+      <p>No of Slides {{current_index+1}}/<%= @no_of_slides %></p>
     </div>
   </div>
 
 </div>
-
