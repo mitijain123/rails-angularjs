@@ -18,3 +18,5 @@
         id: slide_id
     ).done (result) ->
       $scope.images = result.data
+
+  $scope.loadImages()
